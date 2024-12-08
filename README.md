@@ -13,11 +13,10 @@ File Organizer:
     -   organize files based on extension/format
 
 # TODO: 
-    *   Implement these new features
-           <!-- search file -->
+    <!-- *   Implement these new features -->
+           <!-- *search file -->
 
-    *   build gui
-    *   apply design patterns   
+    <!-- *   build gui -->
 
 TEXT EXT: txt, doc, docx, pdf, wps
 VIDEO EXT: avi, mp4, mov, flv

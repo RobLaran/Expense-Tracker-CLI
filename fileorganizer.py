@@ -14,7 +14,6 @@ class FileOrganizer():
         
     def checkFile(self, file):
         return os.path.isfile(file)
-
     
     def change_dir(self, path):
         os.chdir(path)
@@ -23,23 +22,11 @@ class FileOrganizer():
         self.change_dir('..')
         return self.current_dir()
 
-    def delete_file(self, filename):
-        os.remove(filename)
-        
-    def delete_dir(self, dirname):
-        os.rmdir(dirname)
-        
     def delete_item(self, filename):
         if '.' in filename:
             os.remove(filename)
         else:
             shutil.rmtree(filename)
-        
-    def create_dir(self, dirname):
-        os.mkdir(dirname)
-    
-    def create_file(self, filename):
-        os.system(f'type nul > {filename}')
         
     def create_item(self, filename):
         if '.' in filename:
